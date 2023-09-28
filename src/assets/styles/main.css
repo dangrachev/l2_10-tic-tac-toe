@@ -1,0 +1,113 @@
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background: rgb(105,45,218);
+    background: -moz-linear-gradient(270deg, rgba(105,45,218,1) 0%, rgba(174,0,255,1) 100%);
+    background: -webkit-linear-gradient(270deg, rgba(105,45,218,1) 0%, rgba(174,0,255,1) 100%);
+    background: linear-gradient(270deg, rgba(105,45,218,1) 0%, rgba(174,0,255,1) 100%);
+
+    font-family: cursive;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: #fff;
+    font-size: 34px;
+}
+
+.board-wrapper {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.board {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4px;
+    align-content: center;
+    justify-content: center;
+
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #fff;
+    border-radius: 6px;
+    font-size: 50px;
+    color: #8400ff;
+    cursor: pointer;
+}
+.cell:hover {
+    background-color: rgb(223, 188, 255);
+}
+
+.current-player {
+    color: #fff;
+}
+
+.games-actions {
+
+}
+
+button {
+    min-width: 150px;
+    height: 50px;
+    padding: 6px 12px;
+    border: none;
+
+    border-radius: 24px;
+    font-size: 18px;
+    background: transparent;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn-load-game {
+    border: 2px solid #4fffff;
+    color: #4fffff;
+}
+.btn-load-game:hover {
+    background-color: #1cc0c0;
+    border-color: #1cc0c0;
+    color: #fff;
+}
+
+.btn-save-game {
+    margin: 0 15px;
+    border: 2px solid deeppink;
+    color: #ff348d;
+}
+.btn-save-game:hover {
+    background-color: deeppink;
+    color: #fff;
+}
+
+.btn-restart-game {
+    border: 2px solid #ff8300;
+    color: #ff8300;
+}
+.btn-restart-game:hover {
+    background-color: #ff8300;
+    color: #fff;
+}
