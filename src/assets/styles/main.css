@@ -1,6 +1,7 @@
 body {
     width: 100vw;
     height: 100vh;
+    margin: 0;
 
     background: rgb(105,45,218);
     background: -moz-linear-gradient(270deg, rgba(105,45,218,1) 0%, rgba(174,0,255,1) 100%);
@@ -66,7 +67,9 @@ body {
 }
 
 .games-actions {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 button {
@@ -110,4 +113,24 @@ button {
 .btn-restart-game:hover {
     background-color: #ff8300;
     color: #fff;
+}
+
+
+@media screen and (max-width: 620px) {
+    body {
+        font-family: sans-serif;
+    }
+    .games-actions {
+        flex-direction: column;
+    }
+    .games-actions button {
+        margin: 10px 0;
+    }
+    .board {
+        grid-gap: 8px;
+    }
+    .cell {
+        max-width: 94px;
+        max-height: 94px;
+    }
 }
