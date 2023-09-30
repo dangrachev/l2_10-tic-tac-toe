@@ -9,7 +9,7 @@ body {
     background: linear-gradient(270deg, rgba(105,45,218,1) 0%, rgba(174,0,255,1) 100%);
 
     font-family: cursive;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .content {
